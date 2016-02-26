@@ -15,13 +15,6 @@
 * An ExecJS runtime
 * Npm and Bower
 
-### 提示
-
-* 先 clone 知人项目
-* Vagrant 中的 MySQL 账户密码都是 root，需要修改下知人目录下的 config/database.yml
-* 如果本机没有使用 pow 之类占用 80 端口的软件，可以修改 `config.vm.network` 把端口映射到 80 上。这样打开 http://zhiren.dev/ 就是开发环境了
-* Postgres, Memcached 和 RabbitMQ 项目中用不到，所以从脚本中注释掉了
-
 ### 1. 安装 Vagrant
 
 ```
@@ -72,6 +65,7 @@ bundle install
 bin/init_config
 
 # Initialize the database and load the seed data
+vim config/database.yml
 rake db:create
 rake db::migrate
 rake db:seed
@@ -98,3 +92,9 @@ rails server -b 0.0.0.0
 ```
 
 打开浏览器 http://zhiren.dev:3000/ 或者 http://localhost:3000/
+
+### 提示
+
+* Vagrant 中的 MySQL 账户密码都是 root，需要修改下知人目录下的 config/database.yml
+* 如果本机没有使用 pow 之类占用 80 端口的软件，可以修改 `config.vm.network` 把端口映射到 80 上。这样打开 http://zhiren.dev/ 就是开发环境了
+* Postgres, Memcached 和 RabbitMQ 项目中用不到，所以从脚本中注释掉了

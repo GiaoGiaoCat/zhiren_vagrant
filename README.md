@@ -20,7 +20,10 @@ git clone git@github.com:wjp2013/zhiren_vagrant.git
 cd zhiren_vagrant
 ``
 
-3. 修改 Vagrantfile 中的 synced_folder 指向你本机的 **知人** 项目目录
+3. 修改 Vagrantfile 中的配置
+
+* synced_folder 指向你本机的 **知人** 项目目录
+* 根据你的硬件情况修改 Vagrant 可使用的内存大小 `v.memory`和 cpu 数量 `v.cpus`
 
 4. 启动 Vagrant
 
@@ -62,5 +65,5 @@ Companies::AsDemo.new(company: Company.first, user: User.first).save
 Company.first.update(demo: false)
 
 # start server
-rails server
+rails server -b 0.0.0.0
 ```

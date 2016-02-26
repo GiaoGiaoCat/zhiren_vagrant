@@ -18,7 +18,7 @@ brew cask install vagrant-manager
 ```
 git clone git@github.com:wjp2013/zhiren_vagrant.git
 cd zhiren_vagrant
-``
+```
 
 3. 修改 Vagrantfile 中的配置
 

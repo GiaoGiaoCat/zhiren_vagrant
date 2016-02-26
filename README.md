@@ -47,9 +47,9 @@ bundle install
 
 ### 6. 配置知人
 
-*先去要一份 config/application.yml 的配置。*
+**先去要一份 config/application.yml 的配置。**
 
-还是在 Vagrant 环境中执行下面命令
+在 Vagrant 环境中执行下面命令
 
 ```
 # Prepare configure files
@@ -68,5 +68,15 @@ Companies::AsDemo.new(company: Company.first, user: User.first).save
 Company.first.update(demo: false)
 
 # start server
+rails server -b 0.0.0.0
+```
+
+### 7. 下次开发如何启动项目
+
+```
+cd zhiren_vagrant
+vagrant up
+vagrant ssh
+cd /vagrant
 rails server -b 0.0.0.0
 ```

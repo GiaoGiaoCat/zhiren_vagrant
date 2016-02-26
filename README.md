@@ -1,10 +1,25 @@
 ## 安装步骤
 
+### What's In The Box
+
+* Development tools
+* Git
+* Ruby 2.3
+* Bundler
+* SQLite3, MySQL, and Postgres
+* Databases and users needed to run the Active Record test suite
+* System dependencies for nokogiri, sqlite3, mysql, mysql2, and pg
+* Memcached
+* Redis
+* RabbitMQ
+* An ExecJS runtime
+* Bower
+
 ### 提示
 
 * 先 clone 知人项目
 * Vagrant 中的 MySQL 账户密码都是 root，需要修改下知人目录下的 config/database.yml
-
+* Postgres, Memcached 和 RabbitMQ 项目中用不到，所以从脚本中注释掉了
 
 ### 1. 安装 Vagrant
 

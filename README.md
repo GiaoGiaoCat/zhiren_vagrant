@@ -13,7 +13,10 @@
 * Redis
 * RabbitMQ
 * An ExecJS runtime
-* Npm and Bower
+* ImageMagick
+* wkhtmltopdf
+* PhantomJS
+* Bower
 
 ### 1. 安装 Vagrant
 

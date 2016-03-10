@@ -13,7 +13,7 @@ sudo -H -u vagrant bash -i -c 'rbenv global 2.3.0'
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 gem source -r https://rubygems.org/
 gem source -r http://rubygems.org/
-gem source -a https://ruby.taobao.org/
+gem source -a https://gems.ruby-china.org/
 sudo -H -u vagrant bash -i -c 'gem install bundler'
 sudo -H -u vagrant bash -i -c 'rbenv rehash'
 sudo -H -u vagrant bash -i -c "bundle config 'mirror.https://rubygems.org' 'https://gems.ruby-china.org'"

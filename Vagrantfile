@@ -44,8 +44,8 @@ Vagrant.configure(2) do |config|
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
   config.vm.provider "virtualbox" do |v|
-    v.memory = 4096
-    v.cpus = 2
+    v.memory = 1024
+    v.cpus = 1
   end
   # View the documentation for the provider you are using for more
   # information on available options.

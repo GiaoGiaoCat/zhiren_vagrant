@@ -23,7 +23,7 @@
 ```
 brew tap caskroom/cask
 brew install brew-cask
-brew cask search virtualbox
+brew cask install virtualbox
 brew cask install vagrant
 brew cask install vagrant-manager
 ```

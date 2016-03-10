@@ -23,8 +23,8 @@ debconf-set-selections <<< 'mysql-server mysql-server/root_password_again passwo
 install MySQL mysql-server libmysqlclient-dev
 
 install 'ExecJS runtime' nodejs-legacy npm
-echo 'Install bower'
-npm install -g bower >/dev/null 2>&1
+echo 'installing bower'
+npm install -g bower
 
 # Needed for docs generation.
 update-locale LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8

@@ -16,6 +16,6 @@ gem source -r http://rubygems.org/
 gem source -a https://ruby.taobao.org/
 sudo -H -u vagrant bash -i -c 'gem install bundler'
 sudo -H -u vagrant bash -i -c 'rbenv rehash'
-sudo -H -u vagrant bash -i -c "bundle config 'mirror.https://rubygems.org' 'https://ruby.taobao.org'"
+sudo -H -u vagrant bash -i -c "bundle config 'mirror.https://rubygems.org' 'https://gems.ruby-china.org'"
 
 echo 'rbenv is ok!'

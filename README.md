@@ -70,7 +70,7 @@ bin/init_config
 # Initialize the database and load the seed data
 vim config/database.yml
 rake db:create
-rake db::migrate
+rake db:migrate
 rake db:seed
 
 # Create DEMO data

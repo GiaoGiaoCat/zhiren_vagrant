@@ -1,7 +1,7 @@
 # The output of all these installation steps is noisy. With this utility
 # the progress report is nice and concise.
 function install {
-    echo installing $1
+    echo Installing $1
     shift
     apt-get -y install "$@" >/dev/null 2>&1
 }
@@ -23,7 +23,7 @@ debconf-set-selections <<< 'mysql-server mysql-server/root_password_again passwo
 install MySQL mysql-server libmysqlclient-dev
 
 install 'ExecJS runtime' nodejs-legacy npm
-echo 'installing bower'
+echo 'Installing bower'
 npm install -g bower
 
 # Needed for docs generation.

@@ -64,8 +64,8 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get update
   #   sudo apt-get install -y apache2
   # SHELL
-  config.vm.provision :shell, path: 'scripts/bootstrap.sh', keep_color: true
-  config.vm.provision :shell, path: 'scripts/rbenv.sh', privileged: false
-  config.vm.provision :shell, path: 'scripts/software.sh', keep_color: true
+  config.vm.provision :shell, path: './scripts/bootstrap.sh', keep_color: true
+  config.vm.provision :shell, path: './scripts/rbenv.sh', privileged: false
+  config.vm.provision :shell, path: './scripts/software.sh', keep_color: true
 
 end
